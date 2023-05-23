@@ -1,4 +1,4 @@
-## COMPOSITE PATTERN
+## COMPOSITE 
 
 ![image](https://github.com/LeticiaSan/BERTOTI/assets/62018632/284fbaa4-88d7-4f66-8bca-2975d95640df)
 
