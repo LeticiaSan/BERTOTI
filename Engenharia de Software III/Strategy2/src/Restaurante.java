@@ -1,4 +1,3 @@
-package Strategy2;
 public class Restaurante {
 	private Culinaria culinaria;
 	
