@@ -3,17 +3,15 @@ public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//O método getInstance é estático, o que significa que você pode chamá-lo sem 
-		//criar uma instância da classe. Ele retorna a única instância da classe.
-		Mural mural = Mural.getInstance();
+		// Criando os objetos observáveis e observadores
+        PrevisaoTempo previsaoTempo = new PrevisaoTempo();
+        DisplayCondicoesAtuais display = new DisplayCondicoesAtuais();
 
-	        mural.adicionarMensagem("Aviso importante para os alunos de Engenharia!");
-	        mural.adicionarMensagem("Evento cancelado para os alunos de Administração!");
+        // Registrando o observador
+        previsaoTempo.adicionarObservador(display);
 
-	        mural.adicionarMensagem("Aula extra para os alunos de Ciência da Computação!");
-
-	        mural.adicionarMensagem("Alteração no horário de atendimento para os alunos de Engenharia!");     
-        
+        // Simulando atualização nas condições climáticas
+        previsaoTempo.setMedicoes(25.5, 70.2, 1013.2);
 	}
 
 }
